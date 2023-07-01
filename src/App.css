@@ -64,7 +64,7 @@ h1 {
 
   outline: none;
   color: #0F020B;
-  background: #E5E5D8;
+  background: transparent;
 }
 
 .search img {
@@ -107,7 +107,7 @@ h1 {
 
 .container {
   width: 100%;
-  margin-top: 5rem;
+  margin-top: 2rem;
 
   display: flex;
   justify-content: center;
@@ -135,6 +135,8 @@ h1 {
   width: 100%;
   opacity: 0;
   top: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   color: #E5E5D8;
 }
 
@@ -215,19 +217,16 @@ h1 {
 
 @media screen and (max-width: 400px) {
   .app {
-    padding: 4rem 1rem;
+    padding: 0rem 1rem;
   }
 
   h1 {
     font-size: 2rem;
   }
 
-  .container {
-    margin-top: 2rem;
-  }
 
   .movie {
-    width: "100%";
+    width: 100%;
     margin: 1rem;
   }
 }
@@ -238,17 +237,39 @@ h1 {
 }
 .mainIMG{
   margin: 1.5rem 2rem 2rem 5rem;
-  width: 700px;
+  width: 40%;
 }
 .moovTittle{
-  width: 500px;
+  width: 60%;
 
 }
 
 .searchSection{
-  width: 60rem;
+
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction:column;
 }
+
+
+@media screen and (max-width: 800px) {
+  .mainIMG{
+    width: 0;
+    height: 0;
+    scale: 0;
+  }
+  .main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+  }
+  .moovTittle{
+    width: 80%;
+  
+  }
+  
+}
+
+
