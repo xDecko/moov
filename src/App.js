@@ -7,7 +7,7 @@ import mainIMG from "./img/main.png";
 import moovTittle from "./img/moovTittle.png";
 
 // b8ddc27f
-const API_URL = "http://www.omdbapi.com/?apikey=b8ddc27f";
+const API_URL = "https://www.omdbapi.com/?apikey=b8ddc27f";
 
 
 const App = () => {
